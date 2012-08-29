@@ -1,0 +1,14 @@
+inherit ant
+
+CATEGORY="Java"
+SUMMARY="XZ for Java"
+DESCRIPTION="This aims to be a complete implementation of XZ data compression
+in pure Java. Single-threaded streamed compression and decompression and
+random access decompression have been fully implemented."
+HOMEPAGE="http://tukaani.org/xz/java.html"
+SRC_URI="http://tukaani.org/xz/xz-java-${PV}.zip"
+SRC_DIR=.
+
+ANT_BUILD_TARGETS="jar doc"
+ANT_INSTALL_JARS="build/jar/xz.jar"
+ANT_INSTALL_JAVADOC="build/doc/"
